@@ -1,0 +1,70 @@
+<!--CITE: In collaboration with ChatGPT for html starter code and debugging.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile Page - Pre-Health Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="banner">
+        <div class="banner-content">
+            <div class="logo-section">
+                <h1>Hamilton</h1>
+                <span class="separator">•</span>
+                <span class="subtitle">My Pre-Health Plan</span>
+            </div>
+    
+            <!-- New wrapper for right-side buttons -->
+            <div class="right-controls">
+                <div class="profile-button" id="profileContainer">
+                    <button id="profileBtn">Go Back</button>
+                </div>
+                <div class="logout-button" id="logoutContainer">
+                    <button id="logoutBtn">Log Out</button>
+                </div>
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+         <div class="section">
+            <h3>Basic Information</h3>
+            <input type="text" id="fullName" placeholder="Full Name" readonly>
+            <input type="email" id="email" placeholder="Email" readonly>
+            
+            <h3>Additional Information</h3>
+            <input type="text" id="Pronouns" placeholder="Pronouns" readonly>
+            <input type="text" id="advisee" placeholder="Advisee" readonly>
+            <input type="text" id="department" placeholder="Department" readonly>
+            <input type="text" id="notes" placeholder="Notes" readonly>
+        </div>
+        <div class="section">
+                <h3>System Settings</h3>
+                <button id="editProfileBtn">Edit Profile</button>
+                <button id="changePassword">Change Password</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Password Change Modal -->
+<div id="passwordModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>Change Password</h3>
+      <input type="password" id="currentPasswordInput" placeholder="Current Password">
+      <input type="password" id="newPasswordInput" placeholder="New Password (min 6 chars)">
+      <input type="password" id="confirmPasswordInput" placeholder="Confirm New Password">
+      <div class="modal-buttons">
+        <button id="submitPasswordChange">Submit</button>
+        <button id="cancelPasswordChange">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
