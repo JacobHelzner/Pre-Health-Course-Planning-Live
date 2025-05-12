@@ -1,4 +1,4 @@
-# Pre-Med-Course-Planning
+# Pre-Health-Course-Planning
 
 This is a course planning/management tool for pre-health students and instructors. Students will able to create a profile and add available courses to a schedule. Admins (instructors) will be able to do things like:
 1. View how many students planned each course.
